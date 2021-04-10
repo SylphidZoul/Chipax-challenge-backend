@@ -1,4 +1,4 @@
-const Response = require('./Response')
+const Response = require('../Response')
 
 const controllerWithTryCatch = ({ controller, sucessStatusCode, errorStatusCode }) => {
   return async (req, res, ...restParams) => {
