@@ -1,3 +1,4 @@
 module.exports = {
-  controllerTryCatchWrapper: require('./ControllerTryCatchWrapper')
+  controllerTryCatchWrapper: require('./ControllerTryCatchWrapper'),
+  charCounter: require('./CharCounter')
 }
