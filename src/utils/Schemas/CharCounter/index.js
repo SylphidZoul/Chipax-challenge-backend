@@ -1,6 +1,7 @@
 const Joi = require('joi')
 
-const letter = Joi.string().pattern(/^[a-z]{1}$/)
+const letter = Joi.string().pattern(/^([a-z]{1}|)$/).allow(null, '')
+
 const charCounterQueryValidation = Joi.object({
   character_letter: letter,
   episode_letter: letter,
