@@ -1,7 +1,7 @@
 const router = require('express').Router()
 const { charCounterController } = require('../../controllers')
 const { controllerTryCatchWrapper } = require('../../utils')
-const dataValidation = require('../../middleware/dataValidation')
+const { dataValidation } = require('../../middleware')
 const { charCounterQueryValidation } = require('../../utils/Schemas/CharCounter')
 
 router.get(
